@@ -55,6 +55,15 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            View view = findViewById(R.id.fab);
+            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                    .setAction("Action", new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Toast.makeText(MainActivity.this, "Snackbar, Action", Toast.LENGTH_SHORT).show();
+                        }
+                    })
+                    .show();
             return true;
         }
 
