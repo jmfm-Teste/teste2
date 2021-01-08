@@ -24,15 +24,24 @@
         android:name="com.tc4b.jmm.myapplication.SecondFragment"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_second">
-
         <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            android:id="@+id/action_SecondFragment_to_ThirdFragment"
+            app:destination="@id/ThirdFragment"
+            app:enterAnim="@anim/left_in"
+            app:exitAnim="@anim/right_out"
+            app:popEnterAnim="@anim/right_in"
+            app:popExitAnim="@anim/left_out"  />
+    </fragment>
+    <fragment
+        android:id="@+id/ThirdFragment"
+        android:name="com.tc4b.jmm.myapplication.ThirdFragment"
+        android:label="ThirdFragment" >
+        <action
+            android:id="@+id/action_ThirdFragment_to_FirstFragment"
             app:destination="@id/FirstFragment"
             app:enterAnim="@anim/left_in"
             app:exitAnim="@anim/right_out"
             app:popEnterAnim="@anim/right_in"
-            app:popExitAnim="@anim/left_out"
-            app:popUpTo="@id/FirstFragment"
-            app:popUpToInclusive="true" />
+            app:popExitAnim="@anim/left_out"  />
     </fragment>
 </navigation>
