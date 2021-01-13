@@ -27,11 +27,11 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", new View.OnClickListener() {
+                Snackbar.make(view, "A minha ação", Snackbar.LENGTH_LONG)
+                        .setAction("ok", new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                Toast.makeText(MainActivity.this, "Snackbar, Action", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(MainActivity.this, "Olá by jmm", Toast.LENGTH_SHORT).show();
                             }
                         })
                         .show();
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
                     .setAction("Action", new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                            Toast.makeText(MainActivity.this, "Snackbar: Action", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "Snackbar Action", Toast.LENGTH_SHORT).show();
                         }
                     })
                     .show();
