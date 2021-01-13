@@ -14,10 +14,11 @@
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/SecondFragment"
-            app:enterAnim="@anim/left_in"
-            app:exitAnim="@anim/right_out"
-            app:popEnterAnim="@anim/right_in"
-            app:popExitAnim="@anim/left_out" />
+            app:enterAnim="@anim/right_in"
+            app:exitAnim="@anim/left_out"
+            app:popEnterAnim="@anim/left_in"
+            app:popExitAnim="@anim/right_out"
+            />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -25,23 +26,27 @@
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_second">
         <action
-            android:id="@+id/action_SecondFragment_to_ThirdFragment"
-            app:destination="@id/ThirdFragment"
-            app:enterAnim="@anim/left_in"
-            app:exitAnim="@anim/right_out"
-            app:popEnterAnim="@anim/right_in"
-            app:popExitAnim="@anim/left_out"  />
+            android:id="@+id/action_SecondFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment"
+            app:enterAnim="@anim/right_in"
+            app:exitAnim="@anim/left_out"
+            app:popEnterAnim="@anim/left_in"
+            app:popExitAnim="@anim/right_out"
+            />
     </fragment>
     <fragment
-        android:id="@+id/ThirdFragment"
+        android:id="@+id/thirdFragment"
         android:name="com.tc4b.jmm.myapplication.ThirdFragment"
-        android:label="ThirdFragment" >
+        android:label="fragment_third"
+        tools:layout="@layout/fragment_third" >
         <action
-            android:id="@+id/action_ThirdFragment_to_FirstFragment"
+            android:id="@+id/action_thirdFragment_to_FirstFragment"
             app:destination="@id/FirstFragment"
             app:enterAnim="@anim/left_in"
             app:exitAnim="@anim/right_out"
-            app:popEnterAnim="@anim/right_in"
-            app:popExitAnim="@anim/left_out"  />
+            app:popEnterAnim="@anim/left_in"
+            app:popExitAnim="@anim/right_out"
+            app:popUpTo="@id/FirstFragment"
+            app:popUpToInclusive="true" />
     </fragment>
 </navigation>
