@@ -4,25 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FourFragment">
+    tools:context=".FourthFragment">
 
     <TextView
-        android:id="@+id/textview_four"
+        android:id="@+id/textview_fourth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/novo"
-        app:layout_constraintBottom_toTopOf="@id/button_four"
+        app:layout_constraintBottom_toTopOf="@id/button_fourth"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button_four"
+        android:id="@+id/button_fourth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/seguinte"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textview_four" />
+        app:layout_constraintTop_toBottomOf="@id/textview_fourth" />
 </androidx.constraintlayout.widget.ConstraintLayout>
